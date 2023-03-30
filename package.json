@@ -1,0 +1,41 @@
+{
+  "name": "site_progressor",
+  "version": "1.0.0",
+  "description": "Создания файловой структуры и настройка вебпака по видеокурсу по webpack от ITdoctor\r Это 2 попытка настройки вебпака. Есть 1 версия созданная по курсу Владилена но там я не могу подключить sass из иа нехватик понимания о чем идет реч и какие действия на что вляиют. Прнято решение пройти полный курс настройке веб паркак по курсу ITdoctor.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToriHever/Site_progressor.git"
+  },
+  "author": "VI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ToriHever/Site_progressor/issues"
+  },
+  "homepage": "https://github.com/ToriHever/Site_progressor#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "csv-loader": "^3.0.5",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less-loader": "^11.1.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "path": "^0.12.7",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.4",
+    "normalize.css": "^8.0.1"
+  }
+}
