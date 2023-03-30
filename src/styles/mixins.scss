@@ -1,0 +1,13 @@
+@mixin flexJstfCont () {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexCenter () {
+    display: flex;
+
+    align-items: center;
+    align-content: center;
+}
