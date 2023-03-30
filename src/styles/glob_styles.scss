@@ -1,5 +1,4 @@
-$background: rgba(8, 15, 23, 9);
-$text: rgba(232, 237, 239, 9);
+@import "color.scss";
 
 body{
     background: $background;
