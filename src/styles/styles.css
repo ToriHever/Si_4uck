@@ -1,2 +1,4 @@
 @import "scss.scss"
-@import "header_footer.scss"
+@import "glob_styles.scss"
+@import "zeroing.scss"
+@import "fonts.scss"
