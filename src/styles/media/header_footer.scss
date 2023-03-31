@@ -1,5 +1,9 @@
-@media(min-width: 1000px){
-    .footer_content {
+@import "../mixins.scss";
 
+@media(max-width: 1000px){
+    footer {
+    .footer_content {
+        @include flexCenter ();
+        }
     }
 }
