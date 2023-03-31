@@ -18,6 +18,7 @@ module.exports = {
         alias: {
             '@styles': path.resolve(__dirname, 'src/styles'),
             '@js': path.resolve(__dirname, 'src/js/'),
+            '@media': path.resolve(__dirname, 'src/styles/media'),
         },
     },
     plugins: [
