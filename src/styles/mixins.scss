@@ -4,10 +4,18 @@
     justify-content: space-between;
     align-items: center;
 }
+@mixin flexColCentr () {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 @mixin flexCenter () {
     display: flex;
-
     align-items: center;
     align-content: center;
 }
+
+
+

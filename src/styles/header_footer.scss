@@ -1,5 +1,63 @@
 @import "color.scss";
+@import "mixins.scss";
 
-    header{
+$padding-footer: 100px;
 
+header {
+    width: 100%;
+    background: $color_header;
+    border-bottom: 1px solid $color_Active;
+//    position: fixed;
+
+
+    .header_content {
+        width: 100%;
+    }
+
+    .header_menu {
+        @include flexJstfCont ();
+    }
+
+    .header_link_elem {
+        padding: 20px 40px;
+        &:hover {
+            background: $color_Active;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid $border_white;
+
+    .footer_content {
+        @include flexJstfCont ();
+        padding: 0 20px;
+    }
+
+    .footer_info{
+        @include flexColCentr ();
+        height: 300px;
+
+        &:first-child{
+            border-right: 1px solid $border_white;
+            padding-right: $padding-footer;
+        }
+        &:last-child{
+            border-left: 1px solid $border_white;
+            padding-left: $padding-footer;
+        }
+
+        &_list {
+            margin: 10px 0;
+            padding-left: 40px;
+        &_link {
+            opacity: .5;
+
+            &_elem {
+                list-style: disc;
+                }
+            }
+        }
+    }
 }

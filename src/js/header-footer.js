@@ -1,13 +1,13 @@
 let headerAuto = `
-    <div class="header_container">
+    <div class="container">
         <div class="header_content">
             <ul class="header_menu">
-                <li class="header_elem_menu"><a href="" class="header_link_elem">Главная</a></li>
-                <li class="header_elem_menu"><a href="" class="header_link_elem">Новости</a></li>
-                <li class="header_elem_menu"><a href="" class="header_link_elem">История игр</a></li>
-                <li class="header_elem_menu"><a href="" class="header_link_elem">Трейлеры</a></li>
-                <li class="header_elem_menu"><a href="" class="header_link_elem">Отзовы</a></li>
-                <li class="header_elem_menu"><a href="" class="header_link_elem">Авторизация</a></li>
+                <a href="" class="header_link_elem"><li class="header_elem_menu">Главная</li></a>
+                <a href="" class="header_link_elem"><li class="header_elem_menu">Новости</li></a>
+                <a href="" class="header_link_elem"><li class="header_elem_menu">История игр</li></a>
+                <a href="" class="header_link_elem"><li class="header_elem_menu">Трейлеры</li></a>
+                <a href="" class="header_link_elem"><li class="header_elem_menu">Отзовы</li></a>
+                <a href="" class="header_link_elem"><li class="header_elem_menu">Авторизация</li></a>
             </ul>
         </div>
     </div>
@@ -15,16 +15,77 @@ let headerAuto = `
 `;
 
 let footerAuto = `
-<div class="footer_container">
+ <div class="container">
         <div class="footer_content">
-            <ul class="header_menu">
-                <li class="footer_elem_menu"><a href="" class="footer_link_elem">Главная</a></li>
-                <li class="footer_elem_menu"><a href="" class="footer_link_elem">Новости</a></li>
-                <li class="footer_elem_menu"><a href="" class="footer_link_elem">История игр</a></li>
-                <li class="footer_elem_menu"><a href="" class="footer_link_elem">Трейлеры</a></li>
-                <li class="footer_elem_menu"><a href="" class="footer_link_elem">Отзовы</a></li>
-                <li class="footer_elem_menu"><a href="" class="footer_link_elem">Авторизация</a></li>
-            </ul>
+            <div class="footer_info">
+                <h2 class="head_bold">Полезные статьи</h2>
+                <ul class="footer_info_list">
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">HowLongToBeat</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">PSPrices</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">OpenCritic</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">Itch.io</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">Discord</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">OBS Studio</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer_info">
+                <h2 class="head_bold">Полезные статьи</h2>
+                <ul class="footer_info_list">
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">HowLongToBeat</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">PSPrices</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">OpenCritic</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">Itch.io</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">Discord</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">OBS Studio</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer_info">
+                <h2 class="head_bold">Полезные статьи</h2>
+                <ul class="footer_info_list">
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">HowLongToBeat</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">PSPrices</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">OpenCritic</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">Itch.io</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">Discord</li>
+                    </a>
+                    <a href="" class="footer_info_list_link">
+                        <li class="footer_info_list_link_elem">OBS Studio</li>
+                    </a>
+                </ul>
+            </div>
         </div>
     </div>
 
