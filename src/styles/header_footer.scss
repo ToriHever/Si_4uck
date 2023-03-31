@@ -1,8 +1,10 @@
 @import "color.scss";
 @import "mixins.scss";
+@import "burger_menu.scss";
 @import "media/header_footer.scss";
 
 $padding-footer: 100px;
+
 
 header {
     width: 100%;

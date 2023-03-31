@@ -1,11 +1,17 @@
 @import "../mixins.scss";
 
 @media(max-width: 1000px){
+    .burger_menu{
+        display: inline-block;;
+        position: relative;
+    }
     header{
-        display: block;
         width: 40%;
         height: 99vh;
 
+        &_content{
+           display: none;
+        }
         .header_menu {
             @include flexColCentr ();
             width: 100%;

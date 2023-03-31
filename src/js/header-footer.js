@@ -1,4 +1,11 @@
+import * as $ from 'jquery'
+
 let headerAuto = `
+    <div class="burger_menu">
+        <div class="stick stick-1"></div>
+        <div class="stick stick-2"></div>
+        <div class="stick stick-3"></div>
+    </div>
     <div class="container">
         <div class="header_content">
             <ul class="header_menu">
@@ -102,3 +109,12 @@ function setHeader() {
 }
 
 setHeader();
+
+
+$(document).ready(function() {
+  $(".burger_menu").click(function() {
+    $(".stick").toggleClass(function () {
+      return $(this).is('.open, .close') ? 'open close' : 'open';
+    });
+  });
+});
