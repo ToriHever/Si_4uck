@@ -2,8 +2,7 @@
 
 @media(max-width: 1000px){
     .burger_menu{
-        display: inline-block;;
-        position: relative;
+        visibility: visible;
     }
     header{
         width: 40%;
