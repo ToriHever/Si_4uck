@@ -1,4 +1,6 @@
 @import "../mixins.scss";
+@import "../color.scss";
+
 
 @media(max-width: 1000px){
     .burger_menu{
@@ -7,10 +9,22 @@
     header{
         width: 40%;
         height: 99vh;
+        background: none;
 
-        &_content{
-           display: none;
+
+        .header_content{
+            height: 99vh;
+            background: $color_header;
+            border-bottom: 1px solid $color_Active;
+            transform: translateX(-405px);
+            transition: .6s;
         }
+
+        .burger_menu-active{
+            transform: translateX(0);
+            transition: .6s;
+        }
+
         .header_menu {
             @include flexColCentr ();
             width: 100%;
