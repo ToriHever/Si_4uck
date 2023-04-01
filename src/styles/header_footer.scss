@@ -8,14 +8,23 @@ $padding-footer: 100px;
 
 header {
     width: 100%;
-    background: $color_header;
-    border-bottom: 1px solid $color_Active;
 //    position: fixed;
 
 
     .header_content {
+        background: $color_header;
+        border-bottom: 1px solid $color_Active;
         width: 100%;
+        height: 99vh;
+        transform: translateX(-334px);
+        transition: .6s;
     }
+
+    .burger_menu-active{
+        transform: translateX(0);
+        transition: .6s;
+    }
+
     .header_menu {
         @include flexJstfCont ();
     }

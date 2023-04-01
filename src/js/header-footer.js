@@ -116,7 +116,6 @@ $(document).ready(function() {
     $(".stick").toggleClass(function () {
       return $(this).is('.open, .close') ? 'open close' : 'open';
     });
+       $(".header_content ").toggleClass("burger_menu-active");
   });
 });
-
-
