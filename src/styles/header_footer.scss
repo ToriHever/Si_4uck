@@ -7,15 +7,16 @@ $padding-footer: 100px;
 
 
 header {
+    position: fixed;
     width: 100%;
     background: $color_header;
-    border-bottom: 1px solid $color_Active;
+    z-index: 8;
 //    position: fixed;
 
 
     .header_content {
         width: 100%;
-
+        border-bottom: 1px solid $color_Active;
     }
 
     .header_menu {
