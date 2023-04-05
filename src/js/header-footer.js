@@ -6,8 +6,8 @@ let headerAuto = `
         <div class="stick stick-2"></div>
         <div class="stick stick-3"></div>
     </div>
-    <div class="container">
         <div class="header_content">
+            <div class="container">
             <ul class="header_menu">
                 <a href="" class="header_link_elem"><li class="header_elem_menu">Главная</li></a>
                 <a href="" class="header_link_elem"><li class="header_elem_menu">Новости</li></a>
