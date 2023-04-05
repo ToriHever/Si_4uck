@@ -2,21 +2,13 @@
 @import "mixins.scss";
 @import "media/index-media.scss";
 
+$size-mainPver: 800px;
+
 .mainPrev{
     position: relative;
-    width: 100%;
-    height: 100%;
-    padding-top: 65px;
-    background-image:url(../assets/img/sam-worthington-zoe-saldana-avatar-2009-20th-century-fox-file-reference-33458-004tha-for-editorial-use-only-all-rights-reserved-PMBYB3.jpg);
-    background-repeat: no-repeat; /* Не повторяем */
-    background-size: cover; /* Размер фона */
-    background-position: center; /* Позиция картинкипо центру */
-    z-index: 6;
-}
-
-
-.mainPrev{
     overflow: hidden;
+    padding-left: 30px;
+    background: linear-gradient(transparent, $background 80%);
 
     &_background{
         position: absolute;
@@ -26,6 +18,34 @@
         left: 0;
         z-index: -1;
         width: 100%;
+    }
+
+    &_content{
+        @include flexRowEnd;
+        min-height: $size-mainPver;
+
+        &_info{
+            @include flexColSpace;
+            align-items: flex-start;
+
+            &_button:first-child{
+                margin: 10px 10px 10px -9px;
+            }
+
+            &_text{
+                margin: 30px 0;
+            }
+
+            &_system{
+                @include flexRow;
+                margin-top: 30px;
+
+                &_element{
+                    @include flexRow;
+                    align-items: center;
+                }
+            }
+        }
     }
 }
 

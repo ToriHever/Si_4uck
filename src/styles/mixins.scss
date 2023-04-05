@@ -4,6 +4,28 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin flexRowEnd () {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+@mixin flexRow () {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flexCol () {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexColSpace () {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 @mixin flexColCentr () {
     display: flex;
     flex-direction: column;
@@ -18,5 +40,10 @@
     align-content: center;
 }
 
+@mixin flexColEnd () {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
 
