@@ -43,9 +43,25 @@ $size-mainPver: 800px;
                 &_element{
                     @include flexRow;
                     align-items: center;
+                    margin: 0 40px;
+                    opacity: .5;
+
+                    &:hover{
+                        opacity: 1;
+                    }
                 }
             }
         }
+    }
+
+    .icon-system {
+        margin: 0 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .name-system {
+        font-size: $fz_smol;
     }
 }
 
