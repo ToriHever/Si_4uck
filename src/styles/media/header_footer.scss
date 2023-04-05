@@ -1,0 +1,36 @@
+@import "../mixins.scss";
+
+@media(max-width: 1000px){
+    .burger_menu{
+        visibility: visible;
+    }
+    header{
+        width: 40%;
+        height: 99vh;
+
+        &_content{
+           display: none;
+        }
+        .header_menu {
+            @include flexColCentr ();
+            width: 100%;
+            padding: 60px 0 30px 0;
+        }
+
+        .header_link_elem{
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .header_elem_menu{
+            padding: 0 40px;
+        }
+
+    }
+    footer {
+    .footer_content {
+        @include flexCenter ();
+        }
+    }
+}

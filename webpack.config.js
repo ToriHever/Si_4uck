@@ -16,8 +16,10 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.json', '.png'],
         alias: {
-            '@styles': path.resolve(__dirname, 'src/styles')
-        }
+            '@styles': path.resolve(__dirname, 'src/styles'),
+            '@js': path.resolve(__dirname, 'src/js/'),
+            '@media': path.resolve(__dirname, 'src/styles/media'),
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -36,8 +38,7 @@ module.exports = {
 //        ]),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
-        }
-        ),
+        }),
     ],
 
     module: {
@@ -52,18 +53,19 @@ module.exports = {
                     'css-loader'
                 ]
             },
+
             {
                 test: /\.(png|jpg|svg|gif)$/,
                 use: ['file-loader']
-            },
+        },
             {
                 test: /\.xml$/,
                 use: ['xml-loader']
-            },
+        },
             {
                 test: /\.csv$/,
                 use: ['csv-loader']
-            },
+        },
             {
                 test: /\.less$/,
                 use: [
@@ -74,8 +76,23 @@ module.exports = {
                     'css-loader',
                     'less-loader'
                 ]
-            },
+        },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                  // Creates `style` nodes from JS strings
+                  "style-loader",
+                  // Translates CSS into CommonJS
+                  "css-loader",
+                  // Compiles Sass to CSS
+                  "sass-loader",
+        ],
+      },
+            {
+                test: /\.txt$/i,
+                use: 'raw-loader',
+      },
 
-        ]
+    ]
     }
 }

@@ -1,0 +1,34 @@
+body, html {
+  margin: 0;
+}
+
+/* Убираем внешние отступы */
+h1,h2,h3,h4,p,ul,li,ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,button,textarea,select {
+  font: inherit;
+}

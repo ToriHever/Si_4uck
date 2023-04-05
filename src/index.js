@@ -1,3 +1,5 @@
 import * as $ from 'jquery'
-import '@styles/styles.css'
-import '@styles/less.less'
+import '@styles/scss.scss'
+import '@styles/burger_menu.scss'
+import '@media/header_footer.scss'
+import '@js/header-footer.js'
