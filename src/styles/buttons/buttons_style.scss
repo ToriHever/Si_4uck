@@ -1,0 +1,13 @@
+@import "../mixins.scss";
+@import "../color.scss";
+
+.button-pink{
+    background: $botton_Pink;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.button-border{
+    border: 1px solid $border_white;
+    padding: 10px 20px;
+    margin: 10px;
+}

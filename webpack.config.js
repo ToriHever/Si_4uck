@@ -19,6 +19,7 @@ module.exports = {
             '@styles': path.resolve(__dirname, 'src/styles'),
             '@js': path.resolve(__dirname, 'src/js/'),
             '@media': path.resolve(__dirname, 'src/styles/media'),
+            '@buttons': path.resolve(__dirname, 'src/styles/buttons'),
         },
     },
     plugins: [
