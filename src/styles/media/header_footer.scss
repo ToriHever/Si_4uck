@@ -1,28 +1,39 @@
 @import "../mixins.scss";
 @import "../color.scss";
+@import "../glob_styles.scss";
 
 
-@media(max-width: 1000px){
-    .burger_menu{
+@media(max-width: 1000px) {
+    .burger_menu {
         visibility: visible;
     }
-    header{
+
+    .header {
+        transform: translateX(-405px);
+        transition: $time_anim;
+    }
+
+    .header-active {
+        transform: translateX(0px);
+        background: $color_header;
+    }
+
+    header {
         width: 40%;
         height: 99vh;
-        background: none;
 
 
-        .header_content{
+        .header_content {
             height: 99vh;
-            background: $color_header;
             border-bottom: 1px solid $color_Active;
             transform: translateX(-405px);
-            transition: .6s;
+            transition: $time_anim;
+;
         }
 
-        .burger_menu-active{
+        .burger_menu-active {
             transform: translateX(0);
-            transition: .6s;
+            transition: $time_anim;
         }
 
         .header_menu {
@@ -31,20 +42,21 @@
             padding: 60px 0 30px 0;
         }
 
-        .header_link_elem{
+        .header_link_elem {
             display: block;
             width: 100%;
             padding: 20px 0;
         }
 
-        .header_elem_menu{
+        .header_elem_menu {
             padding: 0 40px;
         }
 
     }
+
     footer {
-    .footer_content {
-        @include flexCenter ();
+        .footer_content {
+            @include flexCenter ();
         }
     }
 }

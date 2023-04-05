@@ -9,9 +9,9 @@ $padding-footer: 100px;
 header {
     position: fixed;
     width: 100%;
-    background: $color_header;
     z-index: 10;
-//    position: fixed;
+    transform: translateX(36px);
+    //    position: fixed;
 
 
     .header_content {
@@ -25,6 +25,7 @@ header {
 
     .header_link_elem {
         padding: 20px 40px;
+
         &:hover {
             background: $color_Active;
         }
@@ -42,15 +43,16 @@ footer {
         padding: 0 20px;
     }
 
-    .footer_info{
+    .footer_info {
         @include flexColCentr ();
         height: 300px;
 
-        &:first-child{
+        &:first-child {
             border-right: 1px solid $border_white;
             padding-right: $padding-footer;
         }
-        &:last-child{
+
+        &:last-child {
             border-left: 1px solid $border_white;
             padding-left: $padding-footer;
         }
@@ -58,11 +60,12 @@ footer {
         &_list {
             margin: 10px 0;
             padding-left: 40px;
-        &_link {
-            opacity: .5;
 
-            &_elem {
-                list-style: disc;
+            &_link {
+                opacity: .5;
+
+                &_elem {
+                    list-style: disc;
                 }
             }
         }

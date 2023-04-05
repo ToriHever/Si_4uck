@@ -1,11 +1,6 @@
 import * as $ from 'jquery'
 
 let headerAuto = `
-    <div class="burger_menu">
-        <div class="stick stick-1"></div>
-        <div class="stick stick-2"></div>
-        <div class="stick stick-3"></div>
-    </div>
         <div class="header_content">
             <div class="container">
             <ul class="header_menu">
@@ -102,6 +97,8 @@ function setHeader() {
   let header =  document.createElement("header");
     header.innerHTML = headerAuto;
     document.body.insertAdjacentElement('afterbegin', header );
+    header.classList.add('header');
+
 
     let footer =  document.createElement("footer");
     footer.innerHTML = footerAuto;
@@ -117,5 +114,6 @@ $(document).ready(function() {
       return $(this).is('.open, .close') ? 'open close' : 'open';
     });
        $(".header_content ").toggleClass("burger_menu-active");
+       $("header").toggleClass("header-active");
   });
 });
