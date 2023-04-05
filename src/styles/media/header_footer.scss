@@ -11,30 +11,30 @@
     .header {
         transform: translateX(-405px);
         transition: $time_anim;
+        background: $color_header;
     }
 
     .header-active {
         transform: translateX(0px);
-        background: $color_header;
     }
 
     header {
         width: 40%;
         height: 99vh;
+        z-index: 11;
 
 
         .header_content {
             height: 99vh;
             border-bottom: 1px solid $color_Active;
-            transform: translateX(-405px);
-            transition: $time_anim;
-;
+//            transform: translateX(-405px);
+//            transition: $time_anim;
         }
 
-        .burger_menu-active {
-            transform: translateX(0);
-            transition: $time_anim;
-        }
+//        .burger_menu-active {
+//            transform: translateX(0);
+//            transition: $time_anim;
+//        }
 
         .header_menu {
             @include flexColCentr ();
