@@ -25,6 +25,7 @@ $size-mainPver: 800px;
 
     &_content {
         @include flexRowEnd;
+
         min-height: $size-mainPver;
 
         &_info {
@@ -36,7 +37,7 @@ $size-mainPver: 800px;
             }
 
             &_text {
-                margin: 30px 0;
+                margin: $margin_elem;
             }
         }
     }
@@ -47,6 +48,7 @@ $size-mainPver: 800px;
 
 .System {
         @include flexRow;
+        flex-wrap: wrap;
         margin-top: 30px;
 
         &_element {
@@ -59,7 +61,7 @@ $size-mainPver: 800px;
             padding: 10px 20px;
 
             &:first-child {
-                background: $border_white;
+                background: $border_white_opas-min;
             }
 
             &:hover {
@@ -78,3 +80,30 @@ $size-mainPver: 800px;
         }
     }
 
+//Прайс цена скидки
+
+.Price{
+    @include flexRow;
+    align-items: center;
+
+    .discount{
+        border: 2px solid $color_border_discount;
+        padding: 20px;
+        margin-right: 20px;
+    }
+
+    &_container{
+        @include flexRow;
+        background: $border_white_opas-min;
+        margin: $margin_elem;
+
+        &_inner{
+            width: 60px;
+            padding: 10px;
+
+            &_number{
+                width: 100%;
+            }
+        }
+    }
+}
