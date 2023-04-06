@@ -80,6 +80,40 @@ $size-mainPver: 800px;
     }
 }
 
+
+.System-dark{
+    @include flexRow;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    &_element {
+        @include flexRow;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        margin: 0 20px;
+        opacity: .7;
+        padding: 10px 20px;
+        background: $background;
+
+
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &_icon {
+            width: 25px;
+            height: 25px;
+        }
+
+        &_name {
+
+            font-size: $fz_smol;
+        }
+    }
+}
+
 //Прайс цена скидки
 
 .Price {
@@ -131,4 +165,8 @@ $size-mainPver: 800px;
     }
 }
 
+//Слайдер игр
 
+.slide-games{
+    position: relative;
+}
