@@ -4,6 +4,9 @@
 
 $size-mainPver: 800px;
 
+
+//Превью на новую игру
+
 .mainPrev {
     position: relative;
     overflow: hidden;
@@ -39,6 +42,9 @@ $size-mainPver: 800px;
     }
 }
 
+
+//операционные системы для игр
+
 .System {
         @include flexRow;
         margin-top: 30px;
@@ -72,8 +78,3 @@ $size-mainPver: 800px;
         }
     }
 
-.mainPrev_content_info_system_element img {
-    position: relative;
-    width: 50px;
-    height: 50px;
-}
