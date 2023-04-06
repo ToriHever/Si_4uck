@@ -1,0 +1,40 @@
+@import "../mixins.scss";
+@import "../color.scss";
+@import "../glob_styles.scss";
+
+@media (max-width: 700px) {
+    .mainPrev_background{
+        height: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .mainPrev_content{
+        @include flexCol;
+        justify-content: flex-end;
+    }
+
+    .System{
+        display: none;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .Price {
+        @include flexCol;
+        max-width: 312px;
+        height: 100%;
+
+        .discount_border-big{
+            padding: 0;
+            justify-content: center;
+        }
+
+        &_container {
+            margin-left: 0px;
+            padding: 0;
+        }
+    }
+
+}

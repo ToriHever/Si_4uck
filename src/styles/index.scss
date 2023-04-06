@@ -1,6 +1,6 @@
 @import "color.scss";
 @import "mixins.scss";
-@import "media/index-media.scss";
+
 
 $size-mainPver: 800px;
 
@@ -131,22 +131,4 @@ $size-mainPver: 800px;
     }
 }
 
-@media (max-width: 840px) {
 
-    .Price {
-        @include flexCol;
-        max-width: 312px;
-        height: 100%;
-
-        .discount_border-big{
-            padding: 0;
-            justify-content: center;
-        }
-
-        &_container {
-            margin-left: 0px;
-            padding: 0;
-        }
-    }
-
-}
