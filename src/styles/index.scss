@@ -91,7 +91,7 @@ $size-mainPver: 800px;
         align-items: center;
         justify-content: center;
         width: 110px;
-        margin: 0 20px;
+        margin: 0 5px;
         opacity: .7;
         padding: 10px 20px;
         background: $background;
@@ -99,7 +99,7 @@ $size-mainPver: 800px;
 
 
         &:hover {
-            opacity: 1;
+            opacity: .9;
         }
 
         &_icon {
