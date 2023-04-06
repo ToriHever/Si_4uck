@@ -42,6 +42,8 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
         }),
+
+        new CleanWebpackPlugin(),
     ],
 
     module: {
