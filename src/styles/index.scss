@@ -84,7 +84,7 @@ $size-mainPver: 800px;
 .System-dark{
     @include flexRow;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 10px;
 
     &_element {
         @include flexRow;
@@ -168,5 +168,30 @@ $size-mainPver: 800px;
 //Слайдер игр
 
 .slide-games{
-    position: relative;
+    @include flexRow;
+    overflow: hidden;
+
+    &_inner{
+        @include flexCol;
+        justify-content: center;
+
+        position: relative;
+        width: $size_slideGame-w;
+        height: $size_slideGame-h;
+
+        padding-left: 30px;
+        overflow: hidden;
+
+        &_background{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+        }
+
+        &_title{
+            margin: 5px;
+        }
+    }
 }
