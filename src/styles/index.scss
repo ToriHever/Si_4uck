@@ -4,13 +4,13 @@
 
 $size-mainPver: 800px;
 
-.mainPrev{
+.mainPrev {
     position: relative;
     overflow: hidden;
     padding-left: 30px;
     background: linear-gradient(transparent, $background 80%);
 
-    &_background{
+    &_background {
         position: absolute;
         object-fit: cover;
         object-position: center;
@@ -20,52 +20,59 @@ $size-mainPver: 800px;
         width: 100%;
     }
 
-    &_content{
+    &_content {
         @include flexRowEnd;
         min-height: $size-mainPver;
 
-        &_info{
+        &_info {
             @include flexColSpace;
             align-items: flex-start;
 
-            &_button:first-child{
+            &_button:first-child {
                 margin: 10px 10px 10px -9px;
             }
 
-            &_text{
+            &_text {
                 margin: 30px 0;
             }
+        }
+    }
+}
 
-            &_system{
-                @include flexRow;
-                margin-top: 30px;
+.System {
+        @include flexRow;
+        margin-top: 30px;
 
-                &_element{
-                    @include flexRow;
-                    align-items: center;
-                    margin: 0 40px;
-                    opacity: .5;
+        &_element {
+            @include flexRow;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            margin: 0 20px;
+            opacity: .5;
+            padding: 10px 20px;
 
-                    &:hover{
-                        opacity: 1;
-                    }
-                }
+            &:first-child {
+                background: $border_white;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &_icon {
+                width: 25px;
+                height: 25px;
+            }
+
+            &_name {
+
+                font-size: $fz_smol;
             }
         }
     }
 
-    .icon-system {
-        margin: 0 10px;
-        width: 25px;
-        height: 25px;
-    }
-
-    .name-system {
-        font-size: $fz_smol;
-    }
-}
-
-.mainPrev_content_info_system_element img{
+.mainPrev_content_info_system_element img {
     position: relative;
     width: 50px;
     height: 50px;

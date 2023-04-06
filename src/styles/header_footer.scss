@@ -5,7 +5,9 @@
 
 $padding-footer: 100px;
 
-
+.header {
+    background: $color_header;
+    }
 header {
     position: fixed;
     width: 100%;
@@ -15,7 +17,7 @@ header {
 
     .header_content {
         width: 100%;
-        border-bottom: 1px solid $color_Active;
+        border-bottom: 1px solid $botton_Pink;
     }
 
     .header_menu {
@@ -26,7 +28,7 @@ header {
         padding: 20px 40px;
 
         &:hover {
-            background: $color_Active;
+            background: $botton_Pink;
         }
     }
 }
