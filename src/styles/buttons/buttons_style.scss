@@ -2,9 +2,12 @@
 @import "../color.scss";
 
 .button-pink{
-    background: $botton_Pink;
+    display: inline-block;
     padding: 10px 20px;
     margin: 10px;
+
+    background: $botton_Pink;
+    text-align: center;
 
     &:hover{
         box-shadow: 5px 6px 0px 1px $color_burger;
@@ -15,9 +18,12 @@
     }
 }
 .button-border{
-    border: 1px solid $border_white;
+    display: inline-block;
     padding: 10px 20px;
     margin: 10px;
+
+    border: 1px solid $border_white;
+    text-align: center;
 
 
     &:hover{
