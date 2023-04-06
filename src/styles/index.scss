@@ -47,63 +47,96 @@ $size-mainPver: 800px;
 //операционные системы для игр
 
 .System {
+    @include flexRow;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    &_element {
         @include flexRow;
-        flex-wrap: wrap;
-        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        margin: 0 20px;
+        opacity: .5;
+        padding: 10px 20px;
 
-        &_element {
-            @include flexRow;
-            align-items: center;
-            justify-content: center;
-            width: 110px;
-            margin: 0 20px;
-            opacity: .5;
-            padding: 10px 20px;
+        &:first-child {
+            background: $border_white_opas-min;
+        }
 
-            &:first-child {
-                background: $border_white_opas-min;
-            }
+        &:hover {
+            opacity: 1;
+        }
 
-            &:hover {
-                opacity: 1;
-            }
+        &_icon {
+            width: 25px;
+            height: 25px;
+        }
 
-            &_icon {
-                width: 25px;
-                height: 25px;
-            }
+        &_name {
 
-            &_name {
-
-                font-size: $fz_smol;
-            }
+            font-size: $fz_smol;
         }
     }
+}
 
 //Прайс цена скидки
 
-.Price{
+.Price {
     @include flexRow;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 370px;
+    height: 80px;
+    margin: $margin_elem;
 
-    .discount{
+
+    .discount_border-big {
+        @include flexRow;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+        padding: 0 20PX;
+
         border: 2px solid $color_border_discount;
-        padding: 20px;
-        margin-right: 20px;
+
+        font-weight: 500;
+        font-size: $size_fonts_big;
     }
 
-    &_container{
+    &_container {
         @include flexRow;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+        margin-left: 15px;
+        padding: 0 10px;
         background: $border_white_opas-min;
-        margin: $margin_elem;
 
-        &_inner{
+
+
+        &_inner {
             width: 60px;
-            padding: 10px;
+            margin: 10px;
+            padding: 0 10px;
 
-            &_number{
-                width: 100%;
-            }
+
+            &_number {}
         }
     }
+}
+
+@media (max-width: 840px) {
+
+    .Price {
+        max-width: 312px;
+        height: 100%;
+
+        &_container {
+            margin-left: 0px;
+        }
+    }
+
 }
