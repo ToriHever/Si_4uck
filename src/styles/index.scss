@@ -214,3 +214,39 @@ $size-mainPver: 800px;
         }
     }
 }
+
+.game-tovar{
+    @include flexRow;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: $margin_elem;
+
+    &_card{
+        @include flexCol;
+        align-items: center;
+        max-width: $size_img_tovar;
+        margin: 20px 0px;
+
+        &_img{
+           margin: $margin_elem_smoll;
+        }
+
+        &_description p{
+            font-size: $fz_smol;
+            color: $border_white_opas-medium;
+            max-width: 150px;
+            text-align: center;
+
+        }
+
+        &_prise{
+            font-size: $fz_medium;
+            font-weight: $font_weit-bold;
+            margin-top: 10px;
+            margin: $margin_elem_smoll;
+        }
+
+    }
+}
+
+
