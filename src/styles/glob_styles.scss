@@ -16,6 +16,27 @@ body{
     align-items: center;
 }
 
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 7px; /* ширина для вертикального скролла */
+    height: 7px; /* высота для горизонтального скролла */
+    background-color: transparent;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: $botton_Pink;
+    border-radius: 5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $botton_Pink;
+}
+
+/* Стрелки */
+
+
+
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, li{
     font-family: 'Montserrat', sans-serif;
     color: $text;
