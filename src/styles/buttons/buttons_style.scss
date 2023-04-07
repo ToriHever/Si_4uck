@@ -10,7 +10,8 @@
     text-align: center;
 
     &:hover{
-        box-shadow: 5px 6px 0px 1px $color_burger;
+       background: $border_white;
+        color: $background;
     }
 
     &:active{
@@ -27,7 +28,8 @@
 
 
     &:hover{
-        box-shadow: 5px 6px 0px 1px $color_burger;
+        background: $border_white;
+        color: $background;
     }
 
     &:active{
