@@ -10,7 +10,7 @@ $size-mainPver: 800px;
 .mainPrev {
     position: relative;
     overflow: hidden;
-    padding-left: 30px;
+    width: 98vw;
     background: linear-gradient(transparent, $background 80%);
 
     &_background {
@@ -81,7 +81,7 @@ $size-mainPver: 800px;
 }
 
 
-.System-dark{
+.System-dark {
     @include flexRow;
     flex-wrap: wrap;
     margin-top: 10px;
@@ -166,32 +166,68 @@ $size-mainPver: 800px;
 }
 
 //Слайдер игр
+/* Контейнер с ограниченными размерами, он будет выполнять роль "окна" */
+.slider {
+    display: flex;
+    width: 100%;
+    height:300px;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
 
-.slide-games{
-    @include flexRow;
-    overflow: hidden;
+    &_container {
+    display: flex;
 
-    &_inner{
-        @include flexCol;
-        justify-content: center;
+        &_item{
+            @include flexCol;
+            justify-content: center;
+            position: relative;
+            max-width: 500px;
+            padding: 0 20px;
 
-        position: relative;
-        width: $size_slideGame-w;
-        height: $size_slideGame-h;
 
-        padding-left: 30px;
-        overflow: hidden;
+            &_background {
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-width: 500px;
+                max-height: 300px;
 
-        &_background{
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: -1;
-            width: 100%;
-        }
+                & img{
+                    z-index: 1;
+                    max-width: 500px;
+                    height: 300px;
+                }
+            }
 
-        &_title{
-            margin: 5px;
+            &_title{
+                position: relative;
+                z-index: 2;
+            }
+
+            &_link{
+                position: relative;
+                z-index: 2;
+            }
         }
     }
 }
+
+//.slider-container {
+//    display: flex;
+//    width: 90%;
+//    height:300px;
+//    position: relative;
+//    overflow-x: scroll;
+//    overflow-y: hidden;
+//}
+///* Лента с фото, имеет неограниченную ширину и тип flex, чтобы картинки не переносились */
+//.slider-track {
+//    display: flex;
+//}
+//
+//.slider-item img{
+//    min-width: 500px;
+//    height: 300px;
+//}
+/* Стили для оформления кнопок prev/next */
