@@ -2,11 +2,17 @@
 @import "mixins.scss";
 
 $fz_smol: 10pt;
+$fz_medium: 17pt;
+$font_weit-bold: 600;
+
+
 $margin_elem: 40px 0;
+$margin_elem_smoll: 15px 0;
 $time_anim: .6s;
 
 $size_slideGame-w: 500px;
 $size_slideGame-h: 320px;
+$size_img_tovar: 300px;
 
 body{
     background: $background;
