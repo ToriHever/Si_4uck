@@ -10,6 +10,10 @@ $size_slideGame-h: 320px;
 
 body{
     background: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, li{
