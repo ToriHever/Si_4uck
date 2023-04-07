@@ -175,6 +175,7 @@ $size-mainPver: 800px;
     overflow-x: scroll;
     overflow-y: hidden;
 
+
     &_container {
     display: flex;
 
@@ -182,7 +183,7 @@ $size-mainPver: 800px;
             @include flexCol;
             justify-content: center;
             position: relative;
-            max-width: 500px;
+            min-width: 430px;
             padding: 0 20px;
 
 
