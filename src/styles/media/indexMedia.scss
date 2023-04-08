@@ -39,4 +39,9 @@
         }
     }
 
+    .game-tovar{
+        @include flexCol;
+        align-items: center;
+    }
+
 }
