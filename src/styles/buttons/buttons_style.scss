@@ -38,3 +38,37 @@
         color: $background;
     }
 }
+
+.discount_border-big {
+        @include flexRow;
+        align-items: center;
+        text-align: center;
+
+        width: 100%;
+        height: 100%;
+        padding: 0 20PX;
+
+        border: 2px solid $color_border_discount;
+
+        font-weight: 500;
+        font-size: $size_fonts_big;
+    }
+
+.discount_border{
+        @include flexRow;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+
+    &_txt{
+        display: inline-block;
+        padding: 0 5PX;
+
+        border: 2px solid $color_border_discount;
+
+        font-weight: 500;
+        font-size: $size_fonts_big;
+    }
+}
