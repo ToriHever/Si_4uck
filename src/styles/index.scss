@@ -202,6 +202,7 @@ $size-mainPver: 800px;
 .game-tovar {
         @include flexRow;
         justify-content: center;
+        margin: $margin_elem;
     &_content {
         @include flexRow;
         justify-content: center;
@@ -245,6 +246,8 @@ $size-mainPver: 800px;
                 position: relative;
                 max-width: $size_img_slide-w;
                 max-height: $size_img_slide-h;
+                min-width: 350px;
+                min-height: $size_img_slide-h;
                 overflow: hidden;
 
                 padding: 20px 40px;
