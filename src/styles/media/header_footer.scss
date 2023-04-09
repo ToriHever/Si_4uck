@@ -9,7 +9,7 @@
     }
 
     .header {
-        transform: translateX(-405px);
+        transform: translateX(-1000px);
         transition: $time_anim;
         background: $color_header;
     }
@@ -19,14 +19,15 @@
     }
 
     header {
-        width: 40%;
-        height: 99vh;
+        width: 70%;
+        height: 100vh;
         z-index: 11;
 
 
         .header_content {
             height: 99vh;
             border-bottom: 1px solid $color_Active;
+            overflow-y: auto;
 //            transform: translateX(-405px);
 //            transition: $time_anim;
         }
@@ -51,7 +52,9 @@
         .header_elem_menu {
             padding: 0 40px;
         }
-
+        #current-time{
+            padding: 20px 0;
+        }
     }
 
     footer {

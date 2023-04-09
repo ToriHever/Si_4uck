@@ -33,6 +33,12 @@ header {
             background: $botton_Pink;
         }
     }
+
+    #current-time{
+            padding: 0;
+            color: $border_white_opas-medium;
+            font-size: $fz_smol;
+        }
 }
 
 footer {
