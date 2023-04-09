@@ -11,6 +11,7 @@ let headerAuto = `
                 <a href="" class="header_link_elem"><li class="header_elem_menu">Отзовы</li></a>
                 <a href="" class="header_link_elem"><li class="header_elem_menu">Авторизация</li></a>
             </ul>
+            <div><p id='current-time'></p></div>
         </div>
     </div>
 
@@ -107,6 +108,11 @@ function setHeader() {
 
 setHeader();
 
+$(document).ready(function() {
+      var currentDate = new Date();
+      var currentTime = currentDate.toLocaleString();
+      $("#current-time").text("Сегодня так то: " + currentTime + " а мы все еще курсач защищаем");
+    });
 
 $(document).ready(function() {
   $(".burger_menu").click(function() {
@@ -114,6 +120,8 @@ $(document).ready(function() {
       return $(this).is('.open, .close') ? 'open close' : 'open';
     });
        $(".header_content ").toggleClass("burger_menu-active");
+
        $("header").toggleClass("header-active");
+
   });
 });
