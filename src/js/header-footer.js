@@ -122,6 +122,8 @@ $(document).ready(function() {
        $(".header_content ").toggleClass("burger_menu-active");
 
        $("header").toggleClass("header-active");
+       $("body").toggleClass("lock");
+
 
   });
 });
