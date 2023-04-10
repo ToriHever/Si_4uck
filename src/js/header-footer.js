@@ -4,12 +4,12 @@ let headerAuto = `
         <div class="header_content">
             <div class="container">
             <ul class="header_menu">
-                <a href="" class="header_link_elem"><li class="header_elem_menu">Главная</li></a>
+                <a href="main.html" class="header_link_elem"><li class="header_elem_menu">Главная</li></a>
                 <a href="" class="header_link_elem"><li class="header_elem_menu">Новости</li></a>
                 <a href="" class="header_link_elem"><li class="header_elem_menu">История игр</li></a>
                 <a href="" class="header_link_elem"><li class="header_elem_menu">Трейлеры</li></a>
                 <a href="" class="header_link_elem"><li class="header_elem_menu">Отзовы</li></a>
-                <a href="" class="header_link_elem"><li class="header_elem_menu">Авторизация</li></a>
+                <a href="authentication.html" class="header_link_elem"><li class="header_elem_menu">Авторизация</li></a>
             </ul>
             <div><p id='current-time'></p></div>
         </div>
@@ -100,10 +100,10 @@ function setHeader() {
     document.body.insertAdjacentElement('afterbegin', header );
     header.classList.add('header');
 
-
     let footer =  document.createElement("footer");
     footer.innerHTML = footerAuto;
     document.body.insertAdjacentElement('beforeend', footer );
+
 }
 
 setHeader();

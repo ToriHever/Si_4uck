@@ -7,7 +7,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        main: './src/index.js'
+        main: './src/index.js',
+        authentication: './src/pagers/authentication.js'
     },
     output: {
         filename: '[name].[contenthash].js',
@@ -24,7 +25,15 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'main.html',
             template: './src/index.html',
+            minify: {
+                collapseWhitespace: false,
+            }
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'authentication.html',
+            template: './src/pagers/authentication.html',
             minify: {
                 collapseWhitespace: false,
             }
