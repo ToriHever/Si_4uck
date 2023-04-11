@@ -5,10 +5,10 @@ let headerAuto = `
             <div class="container">
             <ul class="header_menu">
                 <a href="main.html" class="header_link_elem"><li class="header_elem_menu">Главная</li></a>
-                <a href="" class="header_link_elem"><li class="header_elem_menu">Новости</li></a>
-                <a href="" class="header_link_elem"><li class="header_elem_menu">История игр</li></a>
-                <a href="" class="header_link_elem"><li class="header_elem_menu">Трейлеры</li></a>
-                <a href="" class="header_link_elem"><li class="header_elem_menu">Отзовы</li></a>
+                <a href="news.html" class="header_link_elem"><li class="header_elem_menu">Новости</li></a>
+                <a href="historyGames.html" class="header_link_elem"><li class="header_elem_menu">История игр</li></a>
+                <a href="Trailers.html" class="header_link_elem"><li class="header_elem_menu">Трейлеры</li></a>
+                <a href="Reviews.html" class="header_link_elem"><li class="header_elem_menu">Отзовы</li></a>
                 <a href="authentication.html" class="header_link_elem"><li class="header_elem_menu">Авторизация</li></a>
             </ul>
             <div><p id='current-time'></p></div>
