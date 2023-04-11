@@ -1,0 +1,11 @@
+@import "../../color.scss";
+@import "../../mixins.scss";
+@import "../../glob_styles.scss";
+
+.Reviews{
+    background: $border_white;
+    margin: $margin_elem;
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+}
