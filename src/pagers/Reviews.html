@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Авторизация</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="//cdn.muicss.com/mui-0.10.3/css/mui.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.muicss.com/mui-0.10.3/css/mui.css">
 </head>
 <body>
     <div class="burger_menu">
@@ -15,18 +15,18 @@
         <div class="container">
             <div class="Reviews_content">
                 <div class="Reviews_content_form">
-                    <form class="mui-form">
+                    <form class="mui-form" id="form">
                           <legend>Оставь свой отзыв</legend>
-                          <div class="mui-textfield mui-textfield--float-label">
-                            <input type="text" >
+                          <div id="question-input" class="mui-textfield mui-textfield--float-label">
+                            <input for="question-input" required minlength='10' maxlength='256' type="text" >
                             <label>Напиши в этом поле отзыв :3</label>
                           </div>
-                          <button type="submit" class="mui-btn mui-btn--raised">Отправить</button>
+                          <button id="submit" type="submit" class="mui-btn mui-btn--raised" >Отправить</button>
                         </form>
                 </div>
             </div>
         </div>
     </div>
-    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.js"></script>
+    <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.js"></script>
 </body>
 </html>
