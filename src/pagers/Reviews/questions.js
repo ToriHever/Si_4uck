@@ -1,6 +1,6 @@
 export class Question {
     static create(question) {
-        return fetch ( 'https://authorization-for-yura-s-default-rtdb.europe-west1.firebasedatabase.app/questions.json', {
+        return fetch ( 'https://si4uck-default-rtdb.firebaseio.com//questions.json', {
             method: 'POST',
             body: JSON.stringify(question),
             headers: {
