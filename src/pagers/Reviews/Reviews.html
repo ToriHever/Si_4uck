@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Отзывы</title>
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.muicss.com/mui-0.10.3/css/mui.css">
 </head>
+
 <body>
     <div class="burger_menu">
         <div class="stick stick-1"></div>
@@ -16,21 +18,20 @@
             <div class="Reviews_content">
                 <div class="Reviews_content_form">
                     <form class="mui-form" id='form'>
-                    <legend>Оставте свой отзыв</legend>
-                    <div class="mui-textfield mui-textfield--float-label">
-                        <input type="text" id='question-input' required minlength='10' maxlength='256'>
-                        <label for='questions-input'>Напишите тут отзыв :3</label>
-                    </div>
-                    <button disabled id='submit' type="submit" class="mui-btn mui-btn--raised mui-btn--primary"  >Отправить отзыв</button>
-                </form>
+                        <legend>Оставте свой отзыв</legend>
+                        <div class="mui-textfield mui-textfield--float-label">
+                            <input type="text" id='question-input' required minlength='10' maxlength='256'>
+                            <label for='questions-input'>Напишите тут отзыв :3</label>
+                        </div>
+                        <button disabled id='submit' type="submit" class="mui-btn mui-btn--raised mui-btn--primary">Отправить отзыв</button>
+                    </form>
                 </div>
                 <h2>Твои отзывы </h2>
-                <div class="Reviews_content_item" id='list'>
-
-                </div>
+                <div class="Reviews_content_inner" id='list'></div>
             </div>
         </div>
     </div>
     <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.js"></script>
 </body>
+
 </html>

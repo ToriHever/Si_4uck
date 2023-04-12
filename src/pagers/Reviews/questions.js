@@ -22,7 +22,7 @@ export class Question {
 
         const html = question.length
         ? question.map(toCard).join('')
-        : `<div class="Reviews_content_item">Ты уверен что тут будут отзыввы если ты их не напишешь?</div>`
+        : `<div class="Reviews_content">Ты уверен что тут будут отзыввы если ты их не напишешь?</div>`
 
         const list = document.getElementById('list')
 
@@ -44,11 +44,15 @@ function getQuestionsFromLocalStorge() {
 function toCard(question) {
 //    return 'li'
     return`
-    <div class="Reviews_content_item_data" >
-        ${new Date(question.date).toLocaleDateString()}
-        ${new Date(question.date).toLocaleTimeString()}
-    </div>
-    <div class="Reviews_content_item_text" >${question.text}</div>
-    <br>
+    <div class="Reviews_content_inner_element">
+                      <div class="Reviews_content_inner_element-avatar"><img src="../../assets/icons/avatar.png" alt=""></div>
+                       <div class="Reviews_content_inner_element-text">
+                            <div class="Reviews-data">
+                                ${new Date(question.date).toLocaleDateString()}
+                                ${new Date(question.date).toLocaleTimeString()}
+                            </div>
+                            <p>${question.text}</p>
+                        </div>
+                    </div>
 `
 }

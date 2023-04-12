@@ -6,6 +6,8 @@
     margin: $margin_elem;
     &_content{
         @include flexCenter;
+        width: 100%;
+
         &_form{
             background: $border_white;
             margin: $margin_elem;
@@ -14,17 +16,33 @@
             width: 400px;
 
         }
-        &_item{
+        &_inner{
             border-bottom: 1px solid $border_white;
             border-top: 1px solid $border_white;
             color: $border_white;
             margin: $margin_elem_smoll;
             padding: 20px 0;
+            width: 100%;
 
-            &_data{
-                color:$border_white_opas-medium;
-                font-size:$fz_smol;
-            }
+            &_element{
+                @include flexRow;
+                align-items: center;
+                min-width: 320px;
+                max-width: 900px;
+                margin: $margin_elem;
+
+                &-avatar{
+                    background: $border_white_opas-min;
+                    border-radius: 100%;
+                    margin-right: 40px;
+                }
+
         }
     }
+    &-data{
+        color:$border_white_opas-medium;
+        font-size:$fz_smol;
+    }
 }
+}
+
