@@ -15,11 +15,15 @@
 
         }
         &_item{
-            &_element{
-                border-bottom: 1px solid $border_white;
-                border-top: 1px solid $border_white;
-                margin: $margin_elem_smoll;
-                padding: 20px 0;
+            border-bottom: 1px solid $border_white;
+            border-top: 1px solid $border_white;
+            color: $border_white;
+            margin: $margin_elem_smoll;
+            padding: 20px 0;
+
+            &_data{
+                color:$border_white_opas-medium;
+                font-size:$fz_smol;
             }
         }
     }
