@@ -1,24 +1,44 @@
+import {isValid}  from './utils'
 import * as $ from 'jquery'
 import '@styles/burger_menu.scss'
 import '@media/header_footer.scss'
 
-import {isValid} from './utils.js'
+
 
 const form = document.getElementById('form')
-const input = form.querySelector('#question-input')
-const submitbtn = form.querySelector('#submit')
 
-form.addEventListener('submit', submitFormHandler)
+const input = form.querySelector('#question-input')
+const submitBtn = form.querySelector('#submit')
+
+//window.addEventListener('load', Question.renderList)
+form.addEventListener( 'submit', submitFormHandler)
+//modalBtn.addEventListener( 'click', openModal)
+
+//input.addEventListener('input', () => {
+//    submitBtn.disabled = !isValid(input.value)
+//})
 
 function submitFormHandler(event) {
     event.preventDefault()
 
-    if (isValid(input.value)) {
-        const question =  {
+    const value = input.value
+
+    if (isValid(input.value)){
+        const question = {
             text: input.value.trim(),
             date: new Date().toJSON()
         }
 
-        // Async тут ассинхроный запрос на сервер
-        }
+        submitBtn.disabled = true
+        //Отправака на сервер
+
+        console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', question)
+        input.value = ''
+
+//        Question.create(question).then(() => {
+//            input.value = ''
+//            input.className = ''
+//            submitBtn.disabled = false
+//        })
+    }
 }

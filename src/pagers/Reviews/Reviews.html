@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Авторизация</title>
+    <title>Отзывы</title>
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.muicss.com/mui-0.10.3/css/mui.css">
 </head>
 <body>
@@ -15,14 +15,14 @@
         <div class="container">
             <div class="Reviews_content">
                 <div class="Reviews_content_form">
-                    <form class="mui-form" id="form">
-                          <legend>Оставь свой отзыв</legend>
-                          <div id="question-input" class="mui-textfield mui-textfield--float-label">
-                            <input for="question-input" required minlength='10' maxlength='256' type="text" >
-                            <label>Напиши в этом поле отзыв :3</label>
-                          </div>
-                          <button id="submit" type="submit" class="mui-btn mui-btn--raised" >Отправить</button>
-                        </form>
+                    <form class="mui-form" id='form'>
+                    <legend>Оставте свой отзыв</legend>
+                    <div class="mui-textfield mui-textfield--float-label">
+                        <input type="text" id='question-input' required minlength='10' maxlength='256'>
+                        <label for='questions-input'>Напишите тут отзыв :3</label>
+                    </div>
+                    <button id='submit' type="submit" class="mui-btn mui-btn--raised mui-btn--primary"  >Задать вопрос</button>
+                </form>
                 </div>
             </div>
         </div>
