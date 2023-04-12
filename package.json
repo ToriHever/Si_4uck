@@ -1,7 +1,7 @@
 {
-  "name": "site_progressor",
+  "name": "Si4uck",
   "version": "1.0.0",
-  "description": "Создания файловой структуры и настройка вебпака по видеокурсу по webpack от ITdoctor\r Это 2 попытка настройки вебпака. Есть 1 версия созданная по курсу Владилена но там я не могу подключить sass из иа нехватик понимания о чем идет реч и какие действия на что вляиют. Прнято решение пройти полный курс настройке веб паркак по курсу ITdoctor.",
+  "description": "Сайт на курсач Саньку (Si_4uck)",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --mode development",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ToriHever/Site_progressor.git"
+    "url": "git+https://github.com/ToriHever/Si_4uck.git"
   },
   "author": "VI",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ToriHever/Site_progressor/issues"
+    "url": "https://github.com/ToriHever/Si_4uck/issues"
   },
-  "homepage": "https://github.com/ToriHever/Site_progressor#readme",
+  "homepage": "https://github.com/ToriHever/Si_4uck#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^9.1.2",
