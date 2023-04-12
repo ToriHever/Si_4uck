@@ -13,7 +13,7 @@
             margin: $margin_elem;
             padding: 40px;
             border-radius: 20px;
-            width: 400px;
+            min-width:  320px;
 
         }
         &_inner{
@@ -35,6 +35,15 @@
                     background: $border_white_opas-min;
                     border-radius: 100%;
                     margin-right: 40px;
+                    min-width: 67px;
+
+                    & img{
+                        width: 100%;
+                    }
+                }
+
+                &-text{
+                    max-width: 800px;
                 }
 
         }
