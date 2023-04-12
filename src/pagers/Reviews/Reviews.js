@@ -1,3 +1,4 @@
+import {Question}  from './questions'
 import {isValid}  from './utils'
 import * as $ from 'jquery'
 import '@styles/burger_menu.scss'
@@ -14,9 +15,9 @@ const submitBtn = form.querySelector('#submit')
 form.addEventListener( 'submit', submitFormHandler)
 //modalBtn.addEventListener( 'click', openModal)
 
-//input.addEventListener('input', () => {
-//    submitBtn.disabled = !isValid(input.value)
-//})
+input.addEventListener('input', () => {
+    submitBtn.disabled = !isValid(input.value)
+})
 
 function submitFormHandler(event) {
     event.preventDefault()
@@ -30,15 +31,13 @@ function submitFormHandler(event) {
         }
 
         submitBtn.disabled = true
+
         //Отправака на сервер
+        Question.create(question).then(() =>{
+            input.value = ''
+            input.className = ''
+            submitBtn.disabled = false
+        })
 
-        console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', question)
-        input.value = ''
-
-//        Question.create(question).then(() => {
-//            input.value = ''
-//            input.className = ''
-//            submitBtn.disabled = false
-//        })
     }
 }
