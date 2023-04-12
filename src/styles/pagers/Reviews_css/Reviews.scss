@@ -3,9 +3,24 @@
 @import "../../glob_styles.scss";
 
 .Reviews{
-    background: $border_white;
     margin: $margin_elem;
-    padding: 40px;
-    border-radius: 20px;
-    width: 400px;
+    &_content{
+        @include flexCenter;
+        &_form{
+            background: $border_white;
+            margin: $margin_elem;
+            padding: 40px;
+            border-radius: 20px;
+            width: 400px;
+
+        }
+        &_item{
+            &_element{
+                border-bottom: 1px solid $border_white;
+                border-top: 1px solid $border_white;
+                margin: $margin_elem_smoll;
+                padding: 20px 0;
+            }
+        }
+    }
 }
