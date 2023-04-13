@@ -16,7 +16,7 @@ module.exports = {
     },
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, 'dist/pagers')
+        path: path.resolve(__dirname, 'dist')
     },
     resolve: {
         extensions: ['.js', '.json', '.png'],
