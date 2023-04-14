@@ -17,6 +17,14 @@ export class Question {
         .then(Question.renderList)
     }
 
+    static fetch(token){
+        return fetch(`https://si4uck-default-rtdb.firebaseio.com//questions.json?auth=${token}`)
+            .then(response => response.json())
+            .then(questions => {
+                console.log('Questions', questions)
+        })
+    }
+
     static renderList() {
         const question = getQuestionsFromLocalStorge()
 
