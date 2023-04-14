@@ -18,10 +18,20 @@ export class Question {
     }
 
     static fetch(token){
+        if (!token) {
+            return Promise.resolve('<p class="error">ГДЕ ТВОЙ ТОКЕН?</p>')
+        }
         return fetch(`https://si4uck-default-rtdb.firebaseio.com//questions.json?auth=${token}`)
             .then(response => response.json())
-            .then(questions => {
-                console.log('Questions', questions)
+            .then(response => {
+                if (response.error) {
+                    return `<p class="error">${response.error}</p>`
+                }
+
+                return response ? Object.keys(response).map(key => ({
+                    ...response[key],
+                    id: key
+                })) : []
         })
     }
 
@@ -36,7 +46,14 @@ export class Question {
 
         list.innerHTML = html
     }
+
+    static listToHTML (questions) {
+        return questions.length
+        ? `<ol>${questions.map(q => `<li>${q.text}</li>`).join('')}</ol>`
+        : `<p>Круто, ты первый кто оставит свой отзыв</p>`
+    }
 }
+
 
 
 function addTolocalStrage(question) {
@@ -50,7 +67,6 @@ function getQuestionsFromLocalStorge() {
 }
 
 function toCard(question) {
-//    return 'li'
     return`
     <div class="Reviews_content_inner_element">
                       <div class="Reviews_content_inner_element-avatar"><img src="../../assets/icons/avatar.png" alt=""></div>

@@ -1,4 +1,5 @@
 import {Question} from '../Reviews/questions'
+import {createModal, isValid} from '../Reviews/utils'
 import * as $ from 'jquery'
 import '@styles/burger_menu.scss'
 import '@media/header_footer.scss'
@@ -12,11 +13,15 @@ document.getElementById('auth-form')
 function authFormHandler(event) {
     event.preventDefault()
 
+    const btn = event.target.querySelector('button')
     const email = event.target.querySelector('#email').value
     const password = event.target.querySelector('#password').value
 
+    btn.disabled = true
     authWithEmailAndPassword(email, password)
     .then(Question.fetch)
+    .then(renderModalAfterAuth)
+    .then(() => btn.disabled = false )
 }
 
 function authWithEmailAndPassword(email, password) {
@@ -34,4 +39,12 @@ function authWithEmailAndPassword(email, password) {
         })
         .then(response => response.json())
         .then(data => data.idToken)
+}
+
+function renderModalAfterAuth(content) {
+    if (typeof content === 'string') {
+        createModal('Ошибка', content)
+    } else {
+        createModal('Список отзывов', Question.listToHTML(content))
+    }
 }
