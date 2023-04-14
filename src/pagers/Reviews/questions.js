@@ -24,7 +24,7 @@ export class Question {
         return fetch(`https://si4uck-default-rtdb.firebaseio.com//questions.json?auth=${token}`)
             .then(response => response.json())
             .then(response => {
-                if (response.error) {
+                if (response && response.error) {
                     return `<p class="error">${response.error}</p>`
                 }
 
