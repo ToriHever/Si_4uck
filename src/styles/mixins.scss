@@ -1,3 +1,10 @@
+@mixin positionStart{
+    position: relative;
+    top: $StartPosition;
+    height: 100%;
+
+}
+
 @mixin flexJstfCont () {
     display: flex;
     flex-direction: row;
