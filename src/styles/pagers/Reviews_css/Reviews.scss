@@ -3,6 +3,8 @@
 @import "../../glob_styles.scss";
 
 .Reviews{
+    position: relative;
+    top: 30px;
     margin: $margin_elem;
     &_content{
         @include flexCenter;
