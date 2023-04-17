@@ -46,6 +46,7 @@ footer {
     border-top: 1px solid $border_white;
     position: relative;
     z-index: 10;
+    margin-top: 40px;
 
     .footer_content {
         @include flexJstfCont ();
