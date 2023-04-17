@@ -2,9 +2,10 @@
 @import "../../mixins.scss";
 @import "../../glob_styles.scss";
 
-.Authorization{
-    background: $border_white;
-    margin: $margin_elem;
-    padding: 40px;
-    border-radius: 20px;
+.histori_game-prew{
+    @include flexJstfCont;
+
+    &_text{
+        max-width: 500px;
+    }
 }
