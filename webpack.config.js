@@ -8,11 +8,11 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './src/index.js',
-        news: './src/pagers/news.js',
-        historyGames: './src/pagers/historyGames.js',
-        Trailers: './src/pagers/Trailers.js',
-        Reviews: './src/pagers/Reviews.js',
-        authentication: './src/pagers/authentication.js'
+        news: './src/js/news.js',
+        historyGames: './src/js/historyGames.js',
+        Trailers: './src/js/Trailers.js',
+        Reviews: './src/js/Reviews.js',
+        authentication: './src/js/authentication.js'
     },
     output: {
         filename: '[name].[contenthash].js',
