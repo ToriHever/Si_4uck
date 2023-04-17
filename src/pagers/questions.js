@@ -69,7 +69,7 @@ function getQuestionsFromLocalStorge() {
 function toCard(question) {
     return`
     <div class="Reviews_content_inner_element">
-                      <div class="Reviews_content_inner_element-avatar"><img src="../../assets/icons/avatar.png" alt=""></div>
+                      <div class="Reviews_content_inner_element-avatar"><img src="./assets/icons/avatar.png" alt=""></div>
                        <div class="Reviews_content_inner_element-text">
                             <div class="Reviews-data">
                                 ${new Date(question.date).toLocaleDateString()}

@@ -1,8 +1,9 @@
-import {Question} from '../Reviews/questions'
-import {createModal, isValid} from '../Reviews/utils'
+import {Question} from './questions'
+import {createModal, isValid} from './utils'
 import * as $ from 'jquery'
 import '@styles/burger_menu.scss'
 import '@media/header_footer.scss'
+
 
 
 document.getElementById('auth-form')

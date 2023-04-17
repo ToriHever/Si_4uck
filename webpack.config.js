@@ -8,11 +8,11 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './src/index.js',
-        news: './src/pagers/news/news.js',
-        historyGames: './src/pagers/historyGames/historyGames.js',
-        Trailers: './src/pagers/Trailers/Trailers.js',
-        Reviews: './src/pagers/Reviews/Reviews.js',
-        authentication: './src/pagers/authentication/authentication.js'
+        news: './src/pagers/news.js',
+        historyGames: './src/pagers/historyGames.js',
+        Trailers: './src/pagers/Trailers.js',
+        Reviews: './src/pagers/Reviews.js',
+        authentication: './src/pagers/authentication.js'
     },
     output: {
         filename: '[name].[contenthash].js',
@@ -37,35 +37,35 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'news.html',
-            template: './src/pagers/news/news.html',
+            template: './src/pagers/news.html',
             minify: {
                 collapseWhitespace: false,
             }
         }),
         new HtmlWebpackPlugin({
             filename: 'historyGames.html',
-            template: './src/pagers/historyGames/historyGames.html',
+            template: './src/pagers/historyGames.html',
             minify: {
                 collapseWhitespace: false,
             }
         }),
         new HtmlWebpackPlugin({
             filename: 'Trailers.html',
-            template: './src/pagers/Trailers/Trailers.html',
+            template: './src/pagers/Trailers.html',
             minify: {
                 collapseWhitespace: false,
             }
         }),
         new HtmlWebpackPlugin({
             filename: 'Reviews.html',
-            template: './src/pagers/Reviews/Reviews.html',
+            template: './src/pagers/Reviews.html',
             minify: {
                 collapseWhitespace: false,
             }
         }),
         new HtmlWebpackPlugin({
             filename: 'authentication.html',
-            template: './src/pagers/authentication/authentication.html',
+            template: './src/pagers/authentication.html',
             minify: {
                 collapseWhitespace: false,
             }
