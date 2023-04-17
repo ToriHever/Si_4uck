@@ -2,11 +2,44 @@
 @import "../../mixins.scss";
 @import "../../glob_styles.scss";
 
-.trailers_wrapper {
-    @include positionStart;
+
+    .trailers_wrapper_prew{
+        position: relative;
+        width: 100vw;
+        height: 900px;
+        overflow: hidden;
+
+        &_background{
+            background: linear-gradient(transparent, $background 80%);
+            &_text{
+                position: absolute;
+                bottom: 100px;
+                left: 0;
+                width: 100%;
+                margin: $margin_elem;
+
+                & p{
+                    max-width: 700px;
+                }
+            }
+            & video{
+                position: relative;
+                width: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+        }
+    }
+.trailers_wrapper_head{
+    margin: $margin_elem;
+}
+.trailers_wrapper{
+    @include flexRow;
+    flex-wrap: wrap;
+    justify-content: center;
     .trailers_card{
         max-width: 557px;
-        padding: 0 2px;
+        padding: 0 40px;
         margin: $margin_elem_smoll;
         height: 500px;
         &_head{
@@ -14,7 +47,8 @@
             &_video{
 
                 &_container{
-
+                    width: 500px;
+                    height: 400px;
                 }
 
             }
@@ -22,3 +56,4 @@
         }
     }
 }
+
