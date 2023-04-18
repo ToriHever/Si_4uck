@@ -2,8 +2,19 @@
 @import "mixins.scss";
 @import "glob_styles.scss";
 
+
+.background_body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .5
+}
 .histori_game-prew {
+    position: relative;
     @include flexJstfCont;
+    margin-top: 40px;
 
     &_text {
         max-width: 500px;
