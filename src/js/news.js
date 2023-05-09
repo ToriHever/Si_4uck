@@ -1,64 +1,31 @@
-import * as $ from 'jquery'
-import '@styles/burger_menu.scss'
-import '@media/header_footer.scss'
+// Get references to HTML elements
+const yesButton = document.getElementById('yes-button');
+const noButton = document.getElementById('no-button');
+const newsPopup = document.getElementById('news-popup');
+const newsInput = document.getElementById('news-input');
+const submitButton = document.getElementById('submit-button');
+const responseMessage = document.getElementById('response-message');
 
-
-
-
-// Initialize Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyA2bHXG9c3gOH1NANka5yEX6dzSW0Mv3ng",
-  authDomain: "si4uck.firebaseapp.com",
-  databaseURL: "https://si4uck-default-rtdb.firebaseio.com",
-  projectId: "si4uck",
-  storageBucket: "si4uck.appspot.com",
-  messagingSenderId: "884843768139",
-  appId: "1:884843768139:web:b0552bbd1090c25c5660ce",
-  measurementId: "YOUR_MEASUREMENT_ID"
-};
-
-firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
-
-// Define UI elements
-const dialog = document.getElementById('dialog');
-const yesButton = document.getElementById('yesButton');
-const noButton = document.getElementById('noButton');
-const newsForm = document.getElementById('newsForm');
-const details = document.getElementById('details');
-const newsInput = document.getElementById('newsInput');
-const submitBtn = document.getElementById('submitBtn');
-const result = document.getElementById('result');
-
-// Hide newsForm and result initially
-newsForm.style.display = 'none';
-result.style.display = 'none';
-
-// Attach click event listeners to buttons
-yesButton.addEventListener('click', function () {
-    console.log("VIIIIIIIIIIIIIIIVIIIIIIIIIIIDDDDDDDDDDDDDDDD")
-  dialog.style.display = 'none';
-  newsForm.style.display = 'block';
+// Add event listeners to buttons
+yesButton.addEventListener('click', function() {
+  // Display news popup
+  newsPopup.style.display = 'block';
 });
 
-noButton.addEventListener('click', () => {
-  const message = "Then why are you here? If you want news - write news!";
-  alert(message);
+noButton.addEventListener('click', function() {
+  // Display response message
+  responseMessage.innerHTML = "Печально, тогда почекай что нового у нас случилрось (Мы то не жлобимся на новости в отлии от тебя P.s Но мы всеравно тебя любим  <3)";
+  responseMessage.style.display = 'block';
 });
 
-submitBtn.addEventListener('click', () => {
+submitButton.addEventListener('click', function() {
+  // Get news input value
   const news = newsInput.value;
-  if (news.trim() === '') {
-    alert('Please enter some news!');
-    return;
-  }
 
-  // Send news to database
-  database.ref('news').push({
-    news: news
-  }).then(() => {
-    // Show result message
-    newsForm.style.display = 'none';
-    result.style.display = 'block';
-  });
+  // Display response message with news
+  responseMessage.innerHTML = `Спасибо за вашу новость: ${news} Мы отправили ее неашему модератеру, он посмотрит, подшаманит над ней и опубликует.`;
+  responseMessage.style.display = 'block';
+
+  // Hide news popup
+  newsPopup.style.display = 'none';
 });

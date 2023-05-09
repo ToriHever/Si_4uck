@@ -8,27 +8,20 @@
 </head>
 
 <body>
-    <div class="burger_menu">
-        <div class="stick stick-1"></div>
-        <div class="stick stick-2"></div>
-        <div class="stick stick-3"></div>
+    <div>
+        <p>Ты посомтрои кто утт у нас) У тебя есть новые сплетни? </p>
+        <button id="yes-button">Yes</button>
+        <button id="no-button">No</button>
     </div>
-    <div id="dialog">
-        <p>Hi! Do you have news?</p>
-        <button id="yesButton">Yes</button>
-        <button id="noButton">No</button>
+
+    <div id="news-popup" style="display: none;">
+        <p>Че сидишь? Расказывай давай</p>
+        <input type="text" id="news-input">
+        <button id="submit-button">Отправить</button>
     </div>
-    <div id="newsForm" style="display:none">
-        <p id="details">SUPER! Now let's get more details</p>
-        <input type="text" id="newsInput">
-        <button id="submitBtn">Submit</button>
-    </div>
-    <div id="result" style="display:none">
-        <p>Thank you, my friend! We will check what you wrote to us here and probably publish it</p>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js"></script>
-    <script src="news.js"></script>
+
+    <div id="response-message" style="display: none;"></div>
+
 </body>
 
 </html>
