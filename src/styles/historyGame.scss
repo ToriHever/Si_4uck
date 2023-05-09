@@ -4,20 +4,26 @@
 
 
 .background_body{
+    width: 111%;
     position: fixed;
     top: 0;
     left: 0;
     object-fit: cover;
+    height: 100%;
     z-index: -1;
-    opacity: .5
+    opacity: 0.5;
 }
 .histori_game-prew {
     position: relative;
     @include flexJstfCont;
-    margin-top: 40px;
+    margin: 40px;
+    padding-bottom: 50px;
+    transform: translate(0px, 100px);
 
     &_text {
-        max-width: 500px;
+        max-width: 1050px;
+        text-align: center;
+
     }
 }
 
