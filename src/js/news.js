@@ -14,7 +14,7 @@ yesButton.addEventListener('click', function() {
 
 noButton.addEventListener('click', function() {
   // Display response message
-  responseMessage.innerHTML = "Печально, тогда почекай что нового у нас случилрось (Мы то не жлобимся на новости в отлии от тебя P.s Но мы всеравно тебя любим  <3)";
+  responseMessage.innerHTML =  `<p>Печально, тогда почекай что нового у нас случилрось (Мы то не жлобимся на новости в отлии от тебя P.s Но мы всеравно тебя любим  <3)</p>`;
   responseMessage.style.display = 'block';
 });
 
@@ -23,7 +23,7 @@ submitButton.addEventListener('click', function() {
   const news = newsInput.value;
 
   // Display response message with news
-  responseMessage.innerHTML = `Спасибо за вашу новость: ${news} Мы отправили ее неашему модератеру, он посмотрит, подшаманит над ней и опубликует.`;
+  responseMessage.innerHTML = `<p>Спасибо за вашу новость: ${news} Мы отправили ее неашему модератеру, он посмотрит, подшаманит над ней и опубликует.</p>`;
   responseMessage.style.display = 'block';
 
   // Hide news popup

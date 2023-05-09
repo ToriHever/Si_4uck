@@ -61,6 +61,13 @@ h1, h2, h3, h4, h5, h6, p, a, ul, ol, li{
     list-style: none;
 }
 
+input{
+    font-family: 'Montserrat', sans-serif;
+    color: $background;
+    text-decoration: none;
+    list-style: none;
+}
+
 h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
     font-weight: 600;
@@ -80,3 +87,7 @@ a:hover{
         max-width: 1350px;
         padding: 0 20px;
     }
+
+.text_color-black{
+    color: $background;
+}

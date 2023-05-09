@@ -8,20 +8,28 @@
 </head>
 
 <body>
+   <div class="burger_menu">
+        <div class="stick stick-1"></div>
+        <div class="stick stick-2"></div>
+        <div class="stick stick-3"></div>
+    </div>
+    <div class="container">
+    <div class="news_content">
     <div>
         <p>Ты посомтрои кто утт у нас) У тебя есть новые сплетни? </p>
-        <button id="yes-button">Yes</button>
-        <button id="no-button">No</button>
+        <button class="butn_news" id="yes-button"><p class="text_color-black">Конечно, для чего я тут по твоему?</p></button>
+        <button class="butn_news" id="no-button"><p class="text_color-black">Не, сегодня я читаю твои сплетни</p></button>
     </div>
 
     <div id="news-popup" style="display: none;">
         <p>Че сидишь? Расказывай давай</p>
         <input type="text" id="news-input">
-        <button id="submit-button">Отправить</button>
+        <button class="butn_news" id="submit-button"><p class="text_color-black">Отправить</p></button>
     </div>
 
     <div id="response-message" style="display: none;"></div>
-
+    </div>
+</div>
 </body>
 
 </html>
