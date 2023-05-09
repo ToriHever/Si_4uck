@@ -7,6 +7,13 @@
     position: relative;
 }
 
+.bold-text{
+    font-weight: $font_weit-bold;
+}
+
+.margin-text{
+    margin: $margin_elem_smoll;
+}
 .butn_news{
     padding: 10px 20px;
     margin: 5px 0;

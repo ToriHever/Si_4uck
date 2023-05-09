@@ -23,7 +23,7 @@ submitButton.addEventListener('click', function() {
   const news = newsInput.value;
 
   // Display response message with news
-  responseMessage.innerHTML = `<p>Спасибо за вашу новость: ${news} Мы отправили ее неашему модератеру, он посмотрит, подшаманит над ней и опубликует.</p>`;
+  responseMessage.innerHTML = `<p>Спасибо за вашу новость:</p> <p class="margin-text">${news}</p> <p class="bold-text">Мы отправили ее неашему модератеру, он посмотрит, подшаманит над ней и опубликует.</p>`;
   responseMessage.style.display = 'block';
 
   // Hide news popup
